@@ -1,0 +1,9 @@
+{
+    "useSmtp": true,
+    "host": "smtp.gmail.com",
+    "port": 465,
+    "username": "signspeaklsm@gmail.com",
+    "password": "Signspeak1234",
+    "recipientEmail": "signspeaklsm@gmail.com"
+}
+  

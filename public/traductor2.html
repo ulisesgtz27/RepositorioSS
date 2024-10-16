@@ -1,0 +1,122 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html class="wide" lang="en">
+<head>
+    <title>Signspeak</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/logotipp.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css">
+    <!-- Traductor styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Page Header-->
+    <header class="header">
+        <div class="header-top">
+            <a class="brand-logo" href="index.html">
+                <img src="images/logotipp.png" alt="Logo">
+            </a>
+            <div class="head-title">
+                <p>Un mundo de señas, un mundo de entendimiento</p>
+            </div>
+            <?php if(isset($_SESSION['nombre'])): ?>
+                <div class="user-info">
+                    <span class="mdi mdi-account"></span>
+                    <span><?php echo $_SESSION['nombre']; ?></span>
+                    <a href="logout.php" class="logout-link">Cerrar sesión</a>
+                </div>
+            <?php endif; ?>
+        </div>
+        <div class="nav-container">
+            <nav class="nav-links">
+                <a href="index2.html" class="active">INICIO</a>
+                <a href="talleres2.html">TALLERES</a>
+                <a href="info2.html">ACERCA DE</a>
+                <a href="traductor2.html">TRADUCTOR</a>
+                <a href="chat2.html">CHAT</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Content-->
+    <section class="section section-xs">
+        <div class="container">
+            <!-- Bootstrap tabs-->
+            <div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
+                <!-- Tab panes-->
+                <div class="tab-content">
+                    <!-- Inicio tab content -->
+                    <div class="tab-pane fade show active" id="tabs-1-1">
+                        <!-- Contenido de Inicio, incluyendo video y secciones informativas -->
+                    </div>
+
+                    <!-- Talleres tab content -->
+                    <div class="tab-pane fade" id="tabs-1-2">
+                        <!-- Contenido para Talleres -->
+                    </div>
+
+                    <!-- Acerca de tab content -->
+                    <div class="tab-pane fade" id="tabs-1-3">
+                        <!-- Contenido para Acerca de -->
+                    </div>
+
+                    <!-- Traductor tab content -->
+                    <div class="tab-pane fade" id="tabs-1-4">
+                        <div class="container">
+                            <h1>
+                                Teclado de Lenguaje de Señas
+                                <button class="mode-toggle" id="modeToggle">Cambiar a Texto = Lenguaje de Señas</button>
+                            </h1>
+                            <div id="textInput" class="text-input" contenteditable="true"></div>
+                            <div id="textOutput" class="text-output"></div>
+                            <div class="keyboard-container">
+                                <div class="keyboard" id="keyboard">
+                                    <!-- Las teclas se generarán aquí con JavaScript -->
+                                </div>
+                                <button id="clearButton" class="clear-button">Borrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Footer -->
+    <footer class="footer-classic">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-10 col-md-8">
+                    <div class="footer-classic__inner">
+                        <div class="footer-classic__social">
+                            <ul class="list-inline">
+                                <li><a href="https://www.facebook.com/signspeak" class="icon icon-sm mdi mdi-facebook" target="_blank" aria-label="Facebook"></a></li>
+                                <li><a href="https://www.twitter.com/signspeak" class="icon icon-sm mdi mdi-twitter" target="_blank" aria-label="Twitter"></a></li>
+                                <li><a href="https://www.instagram.com/signspeak" class="icon icon-sm mdi mdi-instagram" target="_blank" aria-label="Instagram"></a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-classic__text">
+                            <p>© 2024 Signspeak. Todos los derechos reservados.<a class="list-inline" href="politica.html"> Politica de Privacidad</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript Files -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Traductor script -->
+    <script src="script.js"></script>
+    
+</body>
+</html>

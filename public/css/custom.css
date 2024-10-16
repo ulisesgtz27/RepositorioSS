@@ -1,0 +1,484 @@
+/* General body settings */
+body {
+    font-family: 'Barlow', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering and resizing video */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.video-container .embed-responsive {
+    width: 80%; /* Ajusta el porcentaje según sea necesario */
+    max-width: 800px; /* Máximo ancho para evitar que sea demasiado grande */
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 450px; /* Ajusta la altura según sea necesario */
+}
+
+/* Custom styles for info.html */
+body {
+    background-color: white;
+    color: black;
+}
+
+.section-title {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.section-content {
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.contact-info h5 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+}
+
+.content-wrapper {
+    padding: 15px;
+    border: 2px solid #333;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Cambiado a columna */
+}
+
+.section-image-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.section-image {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.section-text {
+    margin-left: 20px;
+    flex-grow: 1; /* Asegura que el texto ocupe el espacio disponible */
+}
+
+/* Header styles */
+.header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Adjusting the size of the logo */
+.brand-logo img {
+    width: 130px; /* Ajusta el tamaño según sea necesario */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
+.head-title p {
+    font-size: 20px;
+    color: #000000;
+    
+}
+
+/* Navigation styles */
+.nav-container {
+    background-color: #752174;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    background-color: #913b8f;
+}
+
+/* Footer styles */
+.footer-classic {
+    background-color: #752174;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-classic__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-classic__social {
+    margin-bottom: 20px; /* Espacio debajo de los íconos */
+}
+
+.footer-classic__social .list-inline {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.footer-classic__social .list-inline li {
+    display: inline-block;
+    margin: 0 10px; /* Espacio entre los íconos */
+}
+
+.footer-classic__social .list-inline a {
+    color: #ffffff; /* Color de los íconos */
+    font-size: 30px; /* Tamaño de los íconos */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.footer-classic__social .list-inline a:hover {
+    color: #007bff; /* Color de los íconos al pasar el ratón */
+}
+
+.footer-classic__text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilo para la fila de secciones */
+.info-row {
+    display: flex;
+    justify-content: center; /* Centra las columnas en la fila */
+    gap: 20px; /* Espacio entre las columnas */
+    flex-wrap: wrap; /* Permite que las columnas se envuelvan en pantallas más pequeñas */
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilo para cada sección dentro de la fila */
+.info-section {
+    background-color: #f8f9fa; /* Fondo claro */
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 300px; /* Ancho fijo para cada sección */
+    text-align: center; /* Centra el texto dentro del cuadro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para el cuadro */
+}
+
+/* Estilo para los títulos de las secciones */
+.info-section h4 {
+    color: #752174; /* Color del título */
+    margin-bottom: 10px; /* Espacio inferior */
+    font-size: 18px; /* Tamaño de fuente */
+}
+
+/* Estilo para el contenido dentro de cada sección */
+.info-section .info-content {
+    font-size: 14px; /* Tamaño de fuente */
+}
+/* Justificar texto en párrafos */
+.info-content p {
+    text-align: justify; /* Justifica el texto */
+    margin: 0; /* Elimina márgenes si es necesario */
+    line-height: 1.6; /* Ajusta el espacio entre líneas si lo deseas */
+}
+
+/* Estilos para la sección de Talleres */
+.talleres-section {
+    padding: 20px;
+    text-align: center; /* Centra el texto dentro de la sección */
+}
+
+.talleres-section h2 {
+    margin-bottom: 30px; /* Espacio debajo del título */
+    font-size: 2rem; /* Ajusta el tamaño del texto según tus necesidades */
+    color: #333; /* Ajusta el color del texto según tus preferencias */
+    font-family: 'Roboto', sans-serif; /* Usa la misma fuente que la página principal */
+}
+
+.talleres-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre columnas y filas */
+}
+
+.talleres-col-md-4 {
+    flex: 1 1 calc(33.333% - 20px); /* 3 columnas, teniendo en cuenta el espacio entre ellas */
+    box-sizing: border-box; /* Incluye padding y borde en el cálculo del ancho */
+    margin-bottom: 20px; /* Espacio entre filas */
+}
+
+.talleres-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+    overflow: hidden; /* Oculta el contenido que desborda los límites del cuadro */
+}
+
+.talleres-card-header {
+    background-color: #f8f9fa; /* Color de fondo para el título dentro del cuadro */
+    padding: 10px;
+    text-align: center; /* Centra el texto del título */
+    font-weight: bold; /* Resalta el título */
+    font-family: 'Roboto', sans-serif; /* Usa la misma fuente que la página principal */
+}
+
+.talleres-video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+}
+
+.talleres-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.talleres-card-body {
+    padding: 10px; /* Padding dentro de la tarjeta */
+}
+
+.talleres-video-description {
+    margin-top: 5px; /* Espacio entre la descripción y el video */
+    font-size: 14px;
+    color: #333;
+    text-align: justify; /* Justifica el texto */
+    font-family: 'Roboto', sans-serif; /* Usa la misma fuente que la página principal */
+    font-size: 18px; /* Ajusta el tamaño de la fuente según tus preferencias */
+    line-height: 1.6; /* Mejora la legibilidad con un mayor interlineado */
+}
+
+/* Contenedor del chat */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 30px; /* Ajustar según sea necesario */
+    margin-bottom: 30px; /* Ajustar según sea necesario */
+    margin-left: 50px; /* Ajustar según sea necesario */
+    margin-right: 50px; /* Ajustar según sea necesario */
+}
+
+/* Área de mensajes del chat */
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Contenedor de entrada de texto del chat */
+.chat-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Estilo del campo de entrada de texto */
+.chat-input input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botones en el área de entrada de texto */
+.chat-input button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background-color: #752174;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilo de mensajes de archivos */
+.file-message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.file-message i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.file-message span {
+    margin-right: 10px;
+}
+
+.file-download-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.file-download-button i {
+    font-size: 24px;
+}
+
+/* Estilo de imágenes en el chat */
+.chat-image {
+    max-width: 50%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo de mensajes de chat */
+.chat-message {
+    margin-bottom: 10px;
+}
+
+.chat-message p {
+    margin: 0;
+}
+
+.emoji-picker {
+    display: none;
+    flex-wrap: wrap;
+    max-width: 400px; /* Ampliar para más emojis */
+    border: 1px solid #ccc;
+    background-color: white;
+    position: absolute;
+    bottom: 50px; /* Ajustar a tu diseño */
+    right: 10px; /* Ajustar a tu diseño */
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Asegúrate de que esté sobre otros elementos */
+}
+
+.emoji {
+    cursor: pointer;
+    font-size: 24px;
+    margin: 5px;
+}
+
+.emoji:hover {
+    background-color: #f0f0f0;
+}
+
+/* Estilos para el botón cuadrado */
+.btn-custom {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #752174; /* Color de borde, ajusta según el color de tu página */
+    background-color: #752174; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border-radius: 0; /* Bordes cuadrados */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: bold; /* Negritas */
+}
+
+.btn-custom:hover {
+    background-color: #5f1c60; /* Color de fondo cuando se pasa el ratón */
+    border-color: #5f1c60; /* Color de borde cuando se pasa el ratón */
+    color: white; /* Color del texto cuando se pasa el ratón */
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px; /* Ancho fijo para el cuadro */
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Espacio debajo del logo */
+}
+
+.login-content {
+    text-align: left; /* Alinea el contenido del formulario a la izquierda */
+}
+
+.login-title {
+    text-align: center; /* Centra el título de "Iniciar Sesión" */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-custom {
+    width: 100%;
+    padding: 10px;
+    background-color: #752174;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-link {
+    margin-top: 15px;
+    text-align: center;
+}
